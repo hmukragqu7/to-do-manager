@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
 
 export default function Home() {
-  const [tasks, setTasks] = useState([]); // Start empty!
+  const [tasks, setTasks] = useState<any[]>([]); // Start empty!
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(true);
 
