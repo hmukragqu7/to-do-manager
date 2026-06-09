@@ -49,7 +49,7 @@ export default function Home() {
   };
 
   // 3. Delete task (For now we just filter it locally, building a DELETE API is extra credit!)
-  const deleteTask = (indexToRemove) => {
+  const deleteTask = (indexToRemove: number) => {
     const newTasks = tasks.filter((_, index) => index !== indexToRemove);
     setTasks(newTasks);
   };
